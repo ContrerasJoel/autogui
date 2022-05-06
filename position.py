@@ -1,4 +1,5 @@
 import pyautogui
+print("iniciar")
 
-po = pyautogui.position()
-print(po)
+p = pyautogui.position()
+print(p)

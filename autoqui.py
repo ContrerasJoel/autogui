@@ -43,21 +43,25 @@ print(mensaje1)
 
 if mensaje1=='Cancelar':
     print("No encontrado")
+    pyautogui.hotkey('ctrl', 'num4')
+    time.sleep(1)
+    pyautogui.click(x=1835, y=73)
+
 else:
     time.sleep(1)
     Down()
     pyautogui.hotkey('ctrl', 'shift', 'print')
     time.sleep(1)
-    pyautogui.mouseDown(x=706, y=516)
-    pyautogui.mouseUp(x=1490, y=1035)
+    pyautogui.mouseDown(x=723, y=410)
+    pyautogui.mouseUp(x=1439, y=948)
     time.sleep(1)
     pyautogui.hotkey('ctrl', 'num6')
     pyautogui.click()
     Paste()
     time.sleep(1)
-    pyautogui.click(x=1726, y=763)
+    pyautogui.click(x=1643, y=725)
     pyautogui.press('f8')
-    pyautogui.click(x=1109, y=753)
+    pyautogui.click(x=1439, y=648)
     pyautogui.write('Order: ', interval=0.15)
     pyautogui.hotkey('ctrl', 'num1' )
     time.sleep(2)
@@ -92,5 +96,5 @@ else:
     time.sleep(1)
     pyautogui.hotkey('ctrl','num4')
 
-    pyautogui.click(x=3751, y=79)
+    pyautogui.click(x=3622, y=82)
         

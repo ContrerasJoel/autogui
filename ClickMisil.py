@@ -61,7 +61,7 @@ def Deskt4():
     pyautogui.hotkey('ctrl','num4')
 
 def Play():
-    pyautogui.click(x=3751, y=79)
+    pyautogui.click(x=1826, y=74)
 
 
 Deskt1()
@@ -77,7 +77,10 @@ time.sleep(1)
 Tab2()
 time.sleep(1)
 
-ComandoBuscar()
+pyautogui.doubleClick(x=805, y=133)
+time.sleep(1)
+Paste()
+#ComandoBuscar()
 time.sleep(1)
 
 PasteGuia()

@@ -15,7 +15,7 @@ def  Copy():
     time.sleep(1)
 
 def GuiasAnicam():
-    pyautogui.hotkey('ctrl','4')
+    pyautogui.hotkey('ctrl','2')
     
 def ComandoBuscar():
     pyautogui.hotkey('ctrl','f')
@@ -29,21 +29,26 @@ def Paste():
 def ComandoCaptureCompleto():
     pyautogui.hotkey('ctrl', 'shift', 'print')
     time.sleep(1)
-    pyautogui.mouseDown(x=730, y=380)
-    pyautogui.mouseUp(x=1470, y=616)
+    pyautogui.mouseDown(x=730, y=385)
+    pyautogui.mouseUp(x=1470, y=630)
     time.sleep(1)
     pyautogui.hotkey('ctrl', 'num6')
     pyautogui.click()
     pyautogui.hotkey('ctrl', 'v')
-    pyautogui.click(x=1724, y=801)
+    time.sleep(1)
+    pyautogui.click(x=1723, y=801)
     pyautogui.press('f8')
-    pyautogui.click(x=950, y=674)
+    pyautogui.click(x=1050, y=674)
     pyautogui.write('Order amazon: ' ,interval=0.15)
     pyautogui.hotkey('ctrl', 'num1' )
-    pyautogui.hotkey('ctrl', '1' )
+    time.sleep(1)
+    pyautogui.hotkey('ctrl', '1')
     pyautogui.hotkey('ctrl','left')
+    time.sleep(1)
     pyautogui.hotkey('ctrl','c')
+    time.sleep(1)
     pyautogui.hotkey('ctrl','num6')
+    time.sleep(1)
     pyautogui.hotkey('ctrl','v')
     time.sleep(1)
     Escritorio1()
@@ -63,6 +68,8 @@ def ComandoCaptureCompleto():
         pyautogui.click()
         pyautogui.hotkey('ctrl','a')        
         pyautogui.press('delete')
+        pyautogui.hotkey('ctrl','num4')
+        pyautogui.click(x=2939, y=85)
 
 
 """###################################################################################"""
@@ -88,7 +95,7 @@ GuiasAnicam()
 ComandoBuscar()
 Paste()
 
-time.sleep(5)
+time.sleep(2)
 mensaje1 = pyautogui.confirm(text='Capturar', title='Seleccione el tipo de captura', buttons=['Completo', 'Dividido'])
 time.sleep(1)
 
